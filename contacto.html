@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contacta a NOMA y solicita información sobre prendas, tallas, precios y disponibilidad.">
+  <title>Contacto NOMA | Ropa básica unisex en México</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:wght@500;600&amp;display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <style>
+    :root{--n:#090909;--g:#171717;--m:#f3f0e8;--l:#353535}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--n);color:white;font-family:"DM Sans",sans-serif}
+    h1,h2,h3{font-family:"Playfair Display",serif}
+    .sitio-header{position:sticky;top:0;z-index:9;background:#090909ee;border-bottom:1px solid var(--l)}
+    .nav-principal{min-height:76px;padding:0 5%;display:flex;align-items:center}
+    .marca{font-size:1.55rem;font-weight:700;letter-spacing:.18em;color:white;text-decoration:none}
+    .marca span,.activo{color:#c9ad73!important}
+    .nav-principal ul{margin:0 0 0 auto;padding:0;display:flex;gap:1.5rem;list-style:none}
+    .nav-principal a,.footer-links a{color:#ddd;text-decoration:none}
+    .pagina-hero{padding:9rem 6% 6rem}
+    .pagina-hero h1{font-size:clamp(3.5rem,8vw,7rem)}
+    .pagina-hero>p:not(.etiqueta){max-width:680px;color:#bbb}
+    .etiqueta{text-transform:uppercase;letter-spacing:.18em;font-size:.75rem;color:#c9ad73}
+    .seccion{padding:2rem 6% 8rem}
+    .contacto-caja{padding:4rem;display:grid;grid-template-columns:1fr 1fr;gap:4rem;background:var(--g);border:1px solid var(--l)}
+    .contacto-lista a{display:grid;grid-template-columns:1fr auto;gap:1rem;padding:1.5rem 0;color:white;text-decoration:none;border-bottom:1px solid var(--l)}
+    #formulario-contacto{scroll-margin-top:110px}
+    footer{padding:3rem 6%;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--l)}
+    .footer-links{display:flex;gap:1rem}
+    @media(max-width:850px){
+      .nav-principal{padding:1rem 5%;flex-wrap:wrap}
+      .nav-principal ul{width:100%;margin:1rem 0 0;flex-wrap:wrap}
+      .contacto-caja{padding:2rem;grid-template-columns:1fr}
+      footer{align-items:flex-start;flex-direction:column;gap:1rem}
+    }
+    @media(max-width:991px){
+      .nav-principal .navbar-collapse.show{display:flex!important;flex-basis:100%;flex-direction:column;align-items:flex-start}
+      .nav-principal .navbar-collapse li{width:100%}
+      .nav-principal .navbar-collapse a{display:block;padding:.65rem 0}
+    }
+  </style>
+</head>
+<body>
+  <header class="sitio-header">
+    <nav class="nav-principal navbar navbar-expand-lg navbar-dark" aria-label="Navegación principal">
+      <a class="marca" href="index.html">NOMA<span>.</span></a>
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menuNoma" aria-controls="menuNoma" aria-expanded="false" aria-label="Abrir navegación"><span class="navbar-toggler-icon"></span></button>
+      <ul class="collapse navbar-collapse" id="menuNoma">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="coleccion.html">Colección</a></li>
+        <li><a href="categorias.html">Categorías</a></li>
+        <li><a href="guia.html">Guía</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a class="activo" href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="pagina-hero">
+      <p class="etiqueta">Hablemos</p>
+      <h1>Tu siguiente básico empieza aquí.</h1>
+      <p>Pregunta por una prenda, talla o disponibilidad. El formulario toma menos de un minuto.</p>
+      <a id="boton-contacto" class="btn btn-light btn-lg rounded-0 mt-3" href="#formulario-contacto">Contactar ahora</a>
+    </section>
+
+    <section class="seccion">
+      <div class="contacto-caja">
+        <div>
+          <p class="etiqueta">Contacto NOMA</p>
+          <h2>Estamos cerca.</h2>
+          <p>Elige el medio que te resulte más cómodo para conocer la colección.</p>
+        </div>
+        <div class="contacto-lista">
+          <a href="https://wa.me/525500000000?text=Hola%20NOMA%2C%20quiero%20informaci%C3%B3n%20sobre%20la%20colecci%C3%B3n." target="_blank" rel="noopener noreferrer"><span>WhatsApp: +52 55 0000 0000</span><strong>↗</strong></a>
+          <a href="https://www.zara.com/mx/" target="_blank" rel="noopener noreferrer"><span>Instagram de NOMA</span><strong>↗</strong></a>
+          <a href="mailto:contacto@noma.mx?subject=Consulta%20sobre%20la%20colecci%C3%B3n%20NOMA"><span>Enviar correo a NOMA</span><strong>↗</strong></a>
+          <a href="coleccion.html"><span>Explorar colección</span><strong>→</strong></a>
+        </div>
+      </div>
+
+      <div id="formulario-contacto" class="mt-5 p-4 p-lg-5 bg-dark border border-secondary">
+        <p class="etiqueta">Datos del cliente</p>
+        <h2 class="display-5 mb-3">Completa tu información.</h2>
+        <p class="text-secondary mb-4">Los campos marcados son necesarios para responder tu solicitud.</p>
+        <form id="form-contacto" class="row g-4" action="https://formspree.io/f/xzeevozg" method="POST" novalidate>
+          <input type="hidden" name="_subject" value="Nuevo contacto desde NOMA">
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="nombre">Nombre completo</label>
+            <input class="form-control form-control-lg rounded-0" type="text" id="nombre" name="nombre" autocomplete="name" required>
+            <div class="invalid-feedback">Escribe tu nombre completo.</div>
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="sexo">Sexo</label>
+            <select class="form-select form-select-lg rounded-0" id="sexo" name="sexo" required>
+              <option value="" selected disabled>Selecciona una opción</option>
+              <option value="mujer">Mujer</option>
+              <option value="hombre">Hombre</option>
+              <option value="otro">Otro</option>
+              <option value="no-decir">Prefiero no decir</option>
+            </select>
+            <div class="invalid-feedback">Selecciona una opción.</div>
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="edad">Edad</label>
+            <input class="form-control form-control-lg rounded-0" type="number" id="edad" name="edad" min="18" max="100" required>
+            <div class="invalid-feedback">Escribe una edad entre 18 y 100 años.</div>
+          </div>
+          <div class="col-12 col-md-6">
+            <label class="form-label" for="email">Correo electrónico</label>
+            <input class="form-control form-control-lg rounded-0" type="email" id="email" name="email" autocomplete="email" placeholder="nombre@correo.com" required>
+            <div class="invalid-feedback">Escribe un correo electrónico válido.</div>
+          </div>
+          <div class="col-12">
+            <label class="form-label" for="celular">Número celular</label>
+            <input class="form-control form-control-lg rounded-0" type="tel" id="celular" name="celular" autocomplete="tel" inputmode="numeric" pattern="[0-9]{10}" maxlength="10" placeholder="10 dígitos" required>
+            <div class="form-text text-secondary">Escribe únicamente los 10 números.</div>
+            <div class="invalid-feedback">El celular debe tener exactamente 10 números.</div>
+          </div>
+          <div class="col-12"><button class="btn btn-light btn-lg rounded-0 px-5" type="submit">Enviar información</button></div>
+          <div class="col-12"><div id="mensaje-envio" class="alert alert-light rounded-0 d-none mb-0" role="status" aria-live="polite"></div></div>
+        </form>
+      </div>
+
+      <section class="mt-5 pt-5" aria-labelledby="titulo-ubicacion">
+        <div class="row align-items-center g-4 g-lg-5">
+          <div class="col-12 col-lg-4">
+            <p class="etiqueta">Ubicación NOMA</p>
+            <h2 id="titulo-ubicacion" class="display-5 mb-3">Encuéntranos en Ciudad de México.</h2>
+            <p class="text-secondary mb-4">Consulta nuestra ubicación en el mapa y abre Google Maps para planear tu recorrido.</p>
+            <a class="btn btn-light btn-lg rounded-0 px-4" href="https://maps.app.goo.gl/NDmkxgCbGKaCjZhi9" target="_blank" rel="noopener noreferrer">Abrir en Google Maps</a>
+          </div>
+          <div class="col-12 col-lg-8">
+            <div class="ratio ratio-16x9 border border-secondary">
+              <iframe src="https://www.google.com/maps?q=19.313994,-99.219707&amp;z=17&amp;output=embed" title="Mapa de la ubicación de NOMA en Ciudad de México" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <a class="marca marca-footer" href="index.html">NOMA<span>.</span></a>
+    <p>Básicos unisex para todos los días.</p>
+    <div class="footer-links"><a href="coleccion.html">Colección</a><a href="nosotros.html">Nosotros</a></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  <script>
+    // Guardamos los elementos que usaremos para no buscarlos varias veces.
+    const botonContacto = document.getElementById('boton-contacto');
+    const formulario = document.getElementById('form-contacto');
+    const nombre = document.getElementById('nombre');
+    const mensaje = document.getElementById('mensaje-envio');
+
+    // Después de llegar al formulario, colocamos el cursor en el nombre.
+    botonContacto.addEventListener('click', function () {
+      window.setTimeout(function () {
+        nombre.focus();
+      }, 500);
+    });
+
+    // Revisamos los datos antes de enviarlos a Formspree.
+    formulario.addEventListener('submit', function (evento) {
+      mensaje.classList.add('d-none');
+
+      if (!formulario.checkValidity()) {
+        evento.preventDefault();
+        formulario.classList.add('was-validated');
+        return;
+      }
+
+      const primerNombre = nombre.value.trim().split(' ')[0];
+      mensaje.textContent = 'Gracias, ' + primerNombre + '. Estamos enviando tu información de forma segura.';
+      mensaje.classList.remove('d-none');
+    });
+  </script>
+</body>
+</html>
